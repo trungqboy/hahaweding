@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pitch-like Landing Page - Wedding Studio</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .section {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .btn-primary {
+            @apply bg-purple-600 text-white font-semibold px-6 py-3 rounded-md shadow-md hover:bg-purple-700 transition;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-900">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+        <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
+            <div class="text-2xl font-bold text-purple-700 cursor-pointer"> Haha Wedding Studio</div>
+            <nav class="space-x-6 text-gray-700 font-semibold hidden md:flex">
+                <a href="#features" class="hover:text-purple-700 transition">Dịch Vụ</a>
+                <a href="#gallery" class="hover:text-purple-700 transition">Thư Viện Ảnh</a>
+                <a href="#pricing" class="hover:text-purple-700 transition">Bảng Giá</a>
+                <a href="#contact-methods" class="hover:text-purple-700 transition">Liên Hệ</a>
+            </nav>
+            <button class="md:hidden focus:outline-none" id="menu-btn" aria-label="Menu">
+                <svg class="w-8 h-8 text-purple-700" fill="none" stroke="currentColor" stroke-width="2"
+                    viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="6" x2="21" y2="6" />
+                    <line x1="3" y1="12" x2="21" y2="12" />
+                    <line x1="3" y1="18" x2="21" y2="18" />
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden bg-white p-6">
+            <nav class="flex flex-col space-y-4 text-gray-700 font-semibold">
+                <a href="#features" class="hover:text-purple-700 transition">Dịch Vụ</a>
+                <a href="#gallery" class="hover:text-purple-700 transition">Thư Viện Ảnh</a>
+                <a href="#pricing" class="hover:text-purple-700 transition">Bảng Giá</a>
+                <a href="#contact" class="hover:text-purple-700 transition">Liên Hệ</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="hero" class="section bg-gradient-to-tr from-purple-50 to-purple-100 flex-col text-center px-8">
+        <h1 class="text-5xl md:text-6xl font-extrabold max-w-4xl mb-6 text-purple-900" data-sr>
+            Lưu Giữ Khoảnh Khắc Cưới Hạnh Phúc
+        </h1>
+        <p class="max-w-2xl text-lg md:text-xl text-purple-700 mb-8" data-sr data-sr-delay="200">
+            Dịch vụ studio cưới chuyên nghiệp - chụp ảnh và trang điểm hoàn hảo cho ngày trọng đại.
+        </p>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="section flex flex-col gap-16 max-w-6xl mx-auto px-4">
+        <div class="flex flex-col md:flex-row md:items-center md:gap-12" data-sr>
+            <div class="md:flex-1">
+                <img src="486148641_678354381220198_4662320279076891235_n.jpg" alt="Cặp đôi cưới"
+                    class="rounded-lg shadow-lg" />
+            </div>
+            <div class="md:flex-1">
+                <h2 class="text-3xl font-bold text-purple-800 mb-4">Chụp Ảnh Cưới Chuyên Nghiệp</h2>
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    Chúng tôi ghi lại từng khoảnh khắc đáng nhớ của ngày trọng đại với phong cách tinh tế và độc đáo.
+                </p>
+            </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row md:items-center md:gap-12 md:flex-row-reverse" data-sr
+            data-sr-delay="200">
+            <div class="md:flex-1">
+                <img src="492252228_703873295334973_8274147873496200990_n.jpg" alt="Trang điểm cô dâu"
+                    class="rounded-lg shadow-lg" />
+            </div>
+            <div class="md:flex-1">
+                <h2 class="text-3xl font-bold text-purple-800 mb-4">Trang Điểm Cô Dâu</h2>
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    Đội ngũ chuyên gia trang điểm mang đến phong cách hoàn hảo phù hợp cá tính và lứa tuổi của bạn.
+                </p>
+            </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row md:items-center md:gap-12" data-sr data-sr-delay="400">
+            <div class="md:flex-1">
+                <img src="492796629_703873292001640_1414195682529420683_n.jpg" alt="Studio cưới"
+                    class="rounded-lg shadow-lg" />
+            </div>
+            <div class="md:flex-1">
+                <h2 class="text-3xl font-bold text-purple-800 mb-4">Studio Cưới Đẳng Cấp</h2>
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    Không gian studio sang trọng với những thiết bị chụp ảnh hiện đại, tạo nên những bức hình hoàn hảo.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Methods -->
+    <section id="contact-methods" class="max-w-7xl mx-auto px-6 mb-20">
+        <h2 class="text-3xl text-purple-700 font-bold mb-8 text-center">Phương Thức Liên Hệ</h2>
+        <div class="flex justify-center gap-12 text-purple-700 text-4xl">
+            <a href="https://www.facebook.com/profile.php?id=61570633589219" target="_blank" rel="noopener noreferrer"
+                title="Facebook Page" aria-label="Facebook Page" class="hover:text-purple-900 transition">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="https://m.me/YourPageID" target="_blank" rel="noopener noreferrer" title="Messenger"
+                aria-label="Messenger" class="hover:text-purple-900 transition">
+                <i class="fab fa-facebook-messenger"></i>
+            </a>
+            <a href="https://www.instagram.com/YourActualProfile" target="_blank" rel="noopener noreferrer"
+                title="Instagram Profile" aria-label="Instagram Profile" class="hover:text-purple-900 transition">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="section max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <div class="overflow-hidden rounded-xl shadow-lg cursor-pointer transform transition duration-500 hover:scale-105"
+                data-sr>
+                <img src="497510492_719181543804148_7336016173145369377_n.jpg" alt="Ảnh cưới 1"
+                    class="w-full h-52 object-cover" />
+            </div>
+            <div class="overflow-hidden rounded-xl shadow-lg cursor-pointer transform transition duration-500 hover:scale-105"
+                data-sr data-sr-delay="100">
+                <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=800&q=80"
+                    alt="Ảnh cưới 2" class="w-full h-52 object-cover" />
+            </div>
+            <div class="overflow-hidden rounded-xl shadow-lg cursor-pointer transform transition duration-500 hover:scale-105"
+                data-sr data-sr-delay="200">
+                <img src="https://images.unsplash.com/photo-1525286116112-b59af11adad1?auto=format&fit=crop&w=800&q=80"
+                    alt="Ảnh cưới 3" class="w-full h-52 object-cover" />
+            </div>
+            <div class="overflow-hidden rounded-xl shadow-lg cursor-pointer transform transition duration-500 hover:scale-105"
+                data-sr data-sr-delay="300">
+                <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80"
+                    alt="Ảnh cưới 4" class="w-full h-52 object-cover" />
+            </div>
+            <div class="overflow-hidden rounded-xl shadow-lg cursor-pointer transform transition duration-500 hover:scale-105"
+                data-sr data-sr-delay="400">
+                <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=800&q=80"
+                    alt="Ảnh cưới 5" class="w-full h-52 object-cover" />
+            </div>
+            <div class="overflow-hidden rounded-xl shadow-lg cursor-pointer transform transition duration-500 hover:scale-105"
+                data-sr data-sr-delay="500">
+                <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=800&q=80"
+                    alt="Ảnh cưới 6" class="w-full h-52 object-cover" />
+            </div>
+            <div class="overflow-hidden rounded-xl shadow-lg cursor-pointer transform transition duration-500 hover:scale-105"
+                data-sr data-sr-delay="600">
+                <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=800&q=80"
+                    alt="Ảnh cưới 7" class="w-full h-52 object-cover" />
+            </div>
+            <div class="overflow-hidden rounded-xl shadow-lg cursor-pointer transform transition duration-500 hover:scale-105"
+                data-sr data-sr-delay="700">
+                <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=800&q=80"
+                    alt="Ảnh cưới 8" class="w-full h-52 object-cover" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section bg-purple-50 py-20">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-4xl font-extrabold text-purple-900 mb-4" data-sr>Bảng Giá Dịch Vụ</h2>
+            <p class="max-w-2xl mx-auto text-purple-800 mb-12" data-sr data-sr-delay="200">
+                Chọn gói dịch vụ phù hợp với nhu cầu của bạn và bắt đầu tạo nên ký ức trọn đời.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-8 max-w-5xl mx-auto" data-sr data-sr-delay="400">
+                <div class="bg-white rounded-xl shadow-lg p-8 w-full max-w-xs">
+                    <h3 class="text-xl font-semibold text-purple-700 mb-4">Gói Cơ Bản</h3>
+                    <p class="text-gray-600 mb-6">Dịch vụ chụp ảnh và trang điểm đơn giản</p>
+                    <p class="text-3xl font-extrabold text-purple-700 mb-6">5 triệu<span
+                            class="text-base font-normal">/trọn gói</span></p>
+                    <ul class="text-left text-gray-600 mb-6 space-y-2">
+                        <li>Chụp ảnh ngoại cảnh 1 địa điểm</li>
+                        <li>Trang điểm tự nhiên</li>
+                        <li>20 ảnh chỉnh sửa</li>
+                    </ul>
+                    <button class="btn-primary w-full">Đặt Gói</button>
+                </div>
+                <div class="bg-purple-600 rounded-xl shadow-lg p-8 w-full max-w-xs text-white">
+                    <h3 class="text-xl font-semibold mb-4">Gói Cao Cấp</h3>
+                    <p class="mb-6">Dịch vụ trọn gói chuyên nghiệp</p>
+                    <p class="text-3xl font-extrabold mb-6">15 triệu<span class="text-base font-normal">/trọn gói</span>
+                    </p>
+                    <ul class="text-left space-y-2">
+                        <li>Chụp ảnh ngoại cảnh + studio</li>
+                        <li>Trang điểm chuyên nghiệp</li>
+                        <li>Ảnh và video full chỉnh sửa</li>
+                        <li>Album ảnh cao cấp</li>
+                    </ul>
+                    <button
+                        class="bg-white text-purple-600 font-bold w-full px-6 py-3 rounded-md hover:bg-gray-100 transition">Đặt
+                        Gói</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toast Notification -->
+    <div id="toast" role="alert" aria-live="assertive" aria-atomic="true"
+        class="fixed top-8 right-8 hidden bg-green-400 text-green-900 px-5 py-3 rounded shadow-lg font-semibold flex items-center gap-3">
+        <i class="fas fa-check-circle text-xl"></i>
+        <span>Cảm ơn bạn đã gửi yêu cầu! Chúng tôi sẽ liên hệ sớm.</span>
+    </div>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (menuBtn) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+        if (window.ScrollReveal) {
+            ScrollReveal().reveal('[data-sr]', {
+                distance: '40px',
+                duration: 800,
+                easing: 'ease-in-out',
+                interval: 150
+            });
+        }
+        function sendToMessenger(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const service = document.getElementById('service').value;
+            const message = document.getElementById('message').value.trim();
+
+            if (!name || !email || !phone || !service) {
+                alert('Vui lòng điền đầy đủ các trường bắt buộc!');
+                return;
+            }
+
+            const content = `Thông tin khách hàng mới:\nTên: ${name}\nEmail: ${email}\nSĐT: ${phone}\nDịch vụ quan tâm: ${service}\nLời nhắn: ${message || 'Không có'}`;
+
+            window.open(`https://www.facebook.com/help/messenger-app/2957987164422080/?helpref=uf_share&text=${encodeURIComponent(content)}`, '_blank');
+
+            event.target.reset();
+
+            const toast = document.getElementById('toast');
+            toast.classList.remove('hidden');
+            toast.classList.add('block');
+            toast.style.opacity = 1;
+            setTimeout(() => {
+                toast.style.opacity = 0;
+                setTimeout(() => {
+                    toast.classList.add('hidden');
+                    toast.classList.remove('block');
+                }, 500);
+            }, 3000);
+        }
+    </script>
+</body>
+
+</html>
